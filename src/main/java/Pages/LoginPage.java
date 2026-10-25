@@ -9,7 +9,7 @@ public class LoginPage extends BasePage {
     private By loginWithPasswordLink = By.xpath("//*[contains(text(),'Prijavi se lozinkom')]");
     private By passwordField = By.id("login-form-password");
     private By loginBtn = By.cssSelector(".loading-button");
-    private By loginIcon = By.id("hnf-header-profile");
+    private By loginIcon = By.xpath("//a[contains(@href, '/profile/')]");
     private By logoutBtn = By.xpath("//*[contains(text(),'Odjavi se')]");
 
     public LoginPage(WebDriver driver) {
